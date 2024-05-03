@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "A bpmn-js modeler + properties panel for activit",
   "main": "app/index.js",
+  "type": "module",
   "scripts": {
     "all": "grunt",
     "dev": "grunt auto-build"
