@@ -42,6 +42,7 @@
     "bpmn-js": "^7.4.0",
     "bpmn-js-properties-panel-activiti": "^0.33.1",
     "diagram-js": "^5.0.0",
+    "http-server": "^14.1.1",
     "i": "^0.3.6",
     "jquery": "^3.4.1",
     "min-dash": "^3.5.0",

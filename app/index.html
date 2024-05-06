@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <title>bpmn-js modeler demo</title>
-
   <link rel="stylesheet" href="css/diagram-js.css" />
-  <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
+  <link rel="stylesheet" href="bpmn-font/css/bpmn-embedded.css" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
@@ -12,17 +11,17 @@
 
     <div class="message intro">
       <div class="note">
-        Drop BPMN diagram from your desktop or <a id="js-create-diagram" href>create a new diagram</a> to get started.
+        Drop BPMN diagram from your desktop or <a id="js-create-diagram" href="#">create a new diagram</a> to get started.
       </div>
     </div>
 
     <div class="message error">
       <div class="note">
-        <p>Ooops, we could not display the BPMN 2.0 diagram.</p>
+        <p>Ooops, we could not display the BPMN diagram.</p>
 
         <div class="details">
           <span>Import Error Details</span>
-          <pre></pre>
+          <pre id="error-details"></pre>
         </div>
       </div>
     </div>
@@ -32,20 +31,20 @@
   </div>
 
   <ul class="buttons">
-    <li>
-      download
-    </li>
-    <li>
-      <a id="js-download-diagram" href title="download BPMN diagram">
-        BPMN diagram
-      </a>
-    </li>
-    <li>
-      <a id="js-download-svg" href title="download as SVG image">
-        SVG image
-      </a>
-    </li>
+    <li>download</li>
+    <li><a id="js-download-diagram" href="#" title="download BPMN diagram">BPMN diagram</a></li>
+    <li><a id="js-download-svg" href="#" title="download as SVG image">SVG image</a></li>
   </ul>
 
   <script type="module" src="index.js"></script>
+
+  <script>
+    function displayErrorMessage(message) {
+      const errorDetails = document.getElementById('error-details');
+      errorDetails.textContent = message;
+    }
+
+    
+  </script>
+</body>
 </html>
